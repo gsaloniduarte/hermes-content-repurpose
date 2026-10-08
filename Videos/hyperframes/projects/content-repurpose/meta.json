@@ -1,0 +1,24 @@
+{
+  "id": "content-repurpose",
+  "name": "content-repurpose",
+  "createdAt": "2026-10-08T18:30:00-03:00",
+  "description": "Repurposing pipeline: text → short video/reels/TikTok com narração PT-BR, legendas e BGM. Projeto #4 do ranking automation-ideas.",
+  "status": "active",
+  "pipeline": {
+    "stages": [
+      "capture_frames",
+      "generate_voiceover",
+      "compose_hyperframes",
+      "mix_audio",
+      "render_video",
+      "publish"
+    ],
+    "first_video": {
+      "title": "Conteúdo Repurposed — Vídeo Curto PT-BR",
+      "length_target": "60-90s",
+      "format": "reels/TikTok/shorts"
+    }
+  },
+  "repo": "https://github.com/gsaloniduarte/hermes-content-repurpose",
+  "source": "automation-ideas cron (2026-10-08)"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "content-repurpose",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repurposing pipeline: text → short video/reels/TikTok com narração PT-BR",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.142 preview",
+    "check": "npx --yes hyperframes@0.8.142 check",
+    "render": "npx --yes hyperframes@0.8.142 render",
+    "publish": "npx --yes hyperframes@0.8.142 publish"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@hyperframes/core": "^0.8.142"
+  }
+}

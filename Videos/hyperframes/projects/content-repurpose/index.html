@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>Content Repurpose</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      margin: 0; width: 1920px; height: 1080px;
+      overflow: hidden; background-color: #0A0A0F; font-family: "Inter", sans-serif;
+    }
+    .scene { position: absolute; inset: 0; }
+
+    /* Cena 1: Hook */
+    #c1 { background: radial-gradient(ellipse at 50% 30%, #1A0A2E 0%, #0A0A0F 70%); }
+    .accent-bar {
+      width: 120px; height: 3px; border-radius: 2px;
+      background: linear-gradient(90deg, #FF2D75, #7B2FF7);
+      margin-bottom: 1.5rem;
+    }
+    .title-big {
+      font-size: 5.5rem; font-weight: 900; letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #FFFFFF 0%, #C0C0FF 40%, #FF2D75 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; line-height: 1.05; text-align: center;
+    }
+    .tagline {
+      font-size: 1.3rem; color: rgba(255,255,255,0.5); margin-top: 1rem;
+      letter-spacing: 0.08em; text-transform: uppercase; font-weight: 400;
+    }
+    .highlight { color: #FF2D75; font-weight: 700; }
+
+    /* Cena 2: Processo */
+    #c2 { background: #0A0A0F; }
+    .step {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .step-num {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg, #FF2D75, #7B2FF7);
+      color: #fff; font-size: 1rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step-title { font-size: 1.1rem; font-weight: 700; color: #fff; }
+
+    /* Cena 3: Resultado */
+    #c3 { background: radial-gradient(ellipse at 50% 70%, #1A0030 0%, #0A0A0F 70%); }
+    .revenue {
+      font-size: 5rem; font-weight: 900;
+      background: linear-gradient(90deg, #FF2D75, #FF6B35, #7B2FF7);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; text-align: center; margin-top: 2rem;
+    }
+    .revenue-label { font-size: 1.2rem; color: rgba(255,255,255,0.5); text-align: center; }
+
+    .bg-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(10,10,15,0.8) 0%, rgba(10,10,15,0.2) 50%, rgba(10,10,15,0.8) 100%);
+    }
+    img.fit {
+      width: 100%; height: 100%; object-fit: cover;
+      position: absolute; top: 0; left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div data-hf-id="hf-j7pz" id="root" data-composition-id="main" data-start="0" data-duration="30" data-width="1920" data-height="1080">
+
+    <!-- Cena 1: Hook -->
+    <div data-hf-id="hf-nyi5" class="scene" id="c1" data-start="0" data-duration="8" data-transition="fade">
+      <div data-hf-id="hf-jese" class="bg-overlay"></div>
+      <div data-hf-id="hf-zu8e" class="accent-bar" data-start="0.5" data-duration="0.7"></div>
+      <h1 data-hf-id="hf-y73q" class="title-big" data-start="1" data-duration="1.5">
+        Conteúdo que não para de <span data-hf-id="hf-40a3" class="highlight">nascer</span>
+      </h1>
+      <p data-hf-id="hf-3nfq" class="tagline" data-start="2.4" data-duration="0.8">
+        Transforme <span data-hf-id="hf-nhkd" class="highlight">qualquer artigo</span> em vídeo curto
+      </p>
+    </div>
+
+    <!-- Cena 2: Processo -->
+    <div data-hf-id="hf-x4w4" class="scene" id="c2" data-start="8" data-duration="10" data-transition="slide-up">
+      <div data-hf-id="hf-zjpe" class="bg-overlay"></div>
+      <div data-hf-id="hf-hean" class="step" data-start="8.5" data-duration="0.8">
+        <div data-hf-id="hf-ch3k" class="step-num">1</div>
+        <span data-hf-id="hf-u8ui" class="step-title">Captura o artigo/link</span>
+      </div>
+      <div data-hf-id="hf-q38q" class="step" data-start="9.5" data-duration="0.8">
+        <div data-hf-id="hf-ba6h" class="step-num">2</div>
+        <span data-hf-id="hf-l1th" class="step-title">Gera narração PT-BR</span>
+      </div>
+      <div data-hf-id="hf-ol1c" class="step" data-start="10.5" data-duration="0.8">
+        <div data-hf-id="hf-bohi" class="step-num">3</div>
+        <span data-hf-id="hf-745e" class="step-title">Compõe com HyperFrames</span>
+      </div>
+      <div data-hf-id="hf-nrpp" class="step" data-start="11.5" data-duration="0.8">
+        <div data-hf-id="hf-ahkf" class="step-num">4</div>
+        <span data-hf-id="hf-6bnm" class="step-title">Publica reels/TikTok</span>
+      </div>
+    </div>
+
+    <!-- Cena 3: Resultado -->
+    <div data-hf-id="hf-jz2m" class="scene" id="c3" data-start="18" data-duration="8" data-transition="fade">
+      <div data-hf-id="hf-zy0f" class="bg-overlay"></div>
+      <p data-hf-id="hf-8vqz" class="revenue-label" data-start="18.5" data-duration="0.6">
+        Seu alvo
+      </p>
+      <div data-hf-id="hf-cetd" class="revenue" data-start="19" data-duration="1.2">
+        R$ <span data-hf-id="hf-cgf7" class="highlight">500–1.500</span>
+      </div>
+      <p data-hf-id="hf-5j92" class="revenue-label" data-start="20.5" data-duration="0.8">
+        /mês · 4–8 vídeos · 100% recorrente
+      </p>
+    </div>
+
+  </div>
+  <script>
+    gsap.from("#c1 h1", { opacity: 0, y: 40, duration: 0.8, ease: "power2.out" });
+    gsap.from("#c1 .accent-bar", { opacity: 0, scaleX: 0, duration: 0.7, ease: "power2.out", delay: 0.3 });
+    gsap.from("#c2 .step", { opacity: 0, y: 30, duration: 0.5, ease: "power2.out", stagger: 0.15 });
+    gsap.from("#c3 .revenue", { opacity: 0, scale: 0.8, duration: 0.8, ease: "back.out(1.2)", delay: 0.2 });
+    gsap.from("#c3 .revenue-label", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out", delay: 0.6 });
+  </script>
+</body>
+</html>

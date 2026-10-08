@@ -1,0 +1,9 @@
+{
+  "id": "content-repurpose",
+  "name": "content-repurpose",
+  "createdAt": "2026-10-08T18:30:00-03:00",
+  "description": "Repurposing pipeline: text → short video/reels/TikTok com narração PT-BR, legendas e BGM. Projeto #4 do ranking automation-ideas.",
+  "status": "setup",
+  "stack": ["HyperFrames", "edge_tts", "Qwen3-TTS-AMD", "FFmpeg", "Hermes cron"],
+  "source": "automation-ideas cron (2026-10-08)"
+}

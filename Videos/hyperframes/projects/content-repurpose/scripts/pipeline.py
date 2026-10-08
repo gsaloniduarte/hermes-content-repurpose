@@ -58,7 +58,7 @@ def generate_voiceover(text, output_file, lang="pt-BR"):
     return output_file
 
 def compose_hyperframes():
-    log("🎬 Compondo com HyperFrames...")
+    log("🎬 Compondo com HyperFrames (npm run build)...")
     run("npm run build", check=False)
     return True
 

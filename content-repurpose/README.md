@@ -27,5 +27,7 @@ R$500–1.500/mês (4–8 vídeos) ou R$120/vídeo
 Setup: 2026-10-08 — aguardando primeiro conteúdo fonte
 
 ## GitHub
-- Repo: será criado após push inicial
-- Branch padrão: main
+- Repo: `gsaloniduarte/hermes-content-repurpose`
+- URL: https://github.com/gsaloniduarte/hermes-content-repurpose
+- Branch padrão: master
+- Push automático configurado
